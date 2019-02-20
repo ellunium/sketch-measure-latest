@@ -3142,8 +3142,7 @@ SM.extend({
             ( layerStates.isLocked && !this.is(layer, MSSliceLayer) ) ||
             layerStates.isEmpty ||
             layerStates.hasSlice ||
-            layerStates.isMeasure ||
-            layer.isMasked()
+            layerStates.isMeasure
         ){
             return this;
         }

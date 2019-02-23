@@ -2629,12 +2629,13 @@ SM.extend({
                 var symbolRect = this.getRect(layer),
                     symbolChildren = layer.symbolMaster().children(),
                     tempSymbol = layer.duplicate(),
-                    tempGroup = tempSymbol.detachStylesAndReplaceWithGroupRecursively(1);
+                    tempGroup = tempSymbol.detachStylesAndReplaceWithGroupRecursively(0);
 
                 tempGroup.fixGeometryWithOptions(0);
 
                 var tempSymbolLayers = tempGroup.children().objectEnumerator(),
-                    overrides = layer.overrides();
+                    overrides = layer.overrides(),
+                    idx = 0;
 
                 overrides = (overrides)? overrides.objectForKey(0): undefined;
 
@@ -2659,7 +2660,8 @@ SM.extend({
                       self.getLayer(
                           artboard,
                           tempSymbolLayer,
-                          data
+                          data,
+                          symbolChildren[idx]
                       );
                     }
                 }

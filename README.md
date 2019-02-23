@@ -18,6 +18,7 @@ Inside Sketch, Go to the menu:
 # Changelog:
 
 ### **FIXED**
+- fixed issues with nested symbols and assets.
 - fixed a bug where masked symbols could not be inspected
 - fixed a bug where marking sizes and spacings would not have the desired outcome
 - fixed a bug where symbols would not get exported after v53 support fix

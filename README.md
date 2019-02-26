@@ -55,7 +55,7 @@ Follow the steps below:
 - [ ] Uninstall the plugin
 - [ ] Quit Sketch
 - [ ] Follow the steps bellow to remove the `PluginsWarehouse` folder
-- [ ] [Download the latest zip file from the fork](https://github.com/ellunium/sketch-measure/archive/master.zip)
+- [ ] [Download the latest zip file from the fork](https://github.com/ellunium/sketch-measure-latest/archive/master.zip)
 - [ ] Reinstall the plugin
 - [ ] Test the `Mark Properties / Spec Export` again
 

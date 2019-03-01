@@ -1,5 +1,5 @@
 
-# 2.7.9 Fork (2.7.7 SMFramework + 2.7.6 Fixes)
+# 2.8.0 Fork (2.7.7 SMFramework + 2.7.6 Fixes)
 This is a fork I've created some time ago to fix Measure for Sketch v52+.
 
 It includes a lot of changes, fixes and aditions, the latest being the addition of the SMFramework from the v2.7.7 released by @utom recently, allowing for the `Toolbar 2.0` to work to certain extent.
@@ -13,11 +13,12 @@ Remember to **uninstall current plugin version**, **restart sketch** then, insta
 Inside Sketch, Go to the menu:
 - Plugins > Manage Plugins...
 - Scroll down to "Sketch Measure"
-    - It should say 2.7.9
+    - It should say 2.8.0
 
 # Changelog:
 
 ### **FIXED**
+- improved support for inspecting symbols, paths and shapes styles and lybrary styles.
 - fixed issues with nested symbols and assets.
 - fixed a bug where masked symbols could not be inspected
 - fixed a bug where marking sizes and spacings would not have the desired outcome
@@ -30,6 +31,7 @@ Inside Sketch, Go to the menu:
 - baseline fixes for Sketch v52+
 
 ### **CHANGED**
+- changed version to 2.8.0 for all languages
 - changed version to 2.7.9 for all languages
 - changed version to 2.7.8 for all languages
 - updated SMFramework to latest version by @utom
@@ -98,7 +100,7 @@ Make it fun to create specs for developers and teammates. **Sketch 49.* support*
 ## Installing Plugins
 
 ### Install from download
-1. [Download the ZIP file](https://github.com/utom/sketch-measure/archive/master.zip) and unzip
+1. [Download the ZIP file](https://github.com/ellunium/sketch-measure-latest/archive/master.zip) and unzip
 2. Open `Sketch Measure.sketchplugin`
 
 ### Install with Sketch Plugin Manager

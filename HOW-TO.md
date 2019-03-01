@@ -1,6 +1,6 @@
 ## Installing Plugins
 
-1. [Download the ZIP file with the Measure](https://github.com/utom/sketch-measure/archive/master.zip) and unzip;
+1. [Download the ZIP file with the Measure](https://github.com/ellunium/sketch-measure-latest/archive/master.zip) and unzip;
 2. Open the `Sketch Measure.sketchplugin`;
 
 

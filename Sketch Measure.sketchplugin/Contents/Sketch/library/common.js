@@ -2408,7 +2408,7 @@ SM.extend({
                this.is(layer, MSSliceLayer) ||
                this.is(layer, MSSymbolInstance) ||
                this.isSliceGroup(layer)
-    },
+    },  
     getStates: function(layer){
         var isVisible = true,
             isLocked = false,
@@ -2960,7 +2960,7 @@ SM.extend({
                         var artboard = self.selectionArtboards[artboardIndex],
                             page = artboard.parentGroup(),
                             layer = artboard.children()[layerIndex];
-                        log( page.name() + ' - ' + artboard.name() + ' - ' + layer.name());
+                        //log( page.name() + ' - ' + artboard.name() + ' - ' + layer.name());
                         try {
                           self.getLayer(
                               artboard, // Sketch artboard element
@@ -3121,7 +3121,7 @@ SM.extend({
 
         return savePathName;
     },
-    getLayer: function(artboard, layer, data, symbolLayer){
+    getLayer: function(artboard, layer, data, symbolLayer){        
         var artboardRect = artboard.absoluteRect(),
             group = layer.parentGroup(),
             layerStates = this.getStates(layer);
@@ -3184,8 +3184,16 @@ SM.extend({
 
         if(symbolLayer) layerData.objectID = this.toJSString( symbolLayer.objectID() );
 
-
         if ( layerType != "slice" ) {
+            
+            tempLayer = layer;
+
+            if( this.is(layer.parentGroup(), MSShapeGroup) ){
+                while (layer.parentGroup().className() == "MSShapeGroup") {
+                    layer = layer.parentGroup();
+                }
+            }
+            
             var layerStyle = layer.style();
             layerData.rotation = layer.rotation();
             layerData.radius = this.getRadius(layer);
@@ -3193,7 +3201,9 @@ SM.extend({
             layerData.fills = this.getFills(layerStyle);
             layerData.shadows = this.getShadows(layerStyle);
             layerData.opacity = this.getOpacity(layerStyle);
-            layerData.styleName = this.getStyleName(layer);
+            layerData.styleName = this.getStyleName(layer);           
+            
+            layer = tempLayer;      
         }
 
         if ( layerType == "text" ) {

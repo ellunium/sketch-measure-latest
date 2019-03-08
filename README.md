@@ -6,7 +6,7 @@ It includes a lot of changes, fixes and aditions, the latest being the addition 
 
 Remember to **uninstall current plugin version**, **restart sketch** then, install the new version. 
 
-[Download the latest zip file from the fork](https://github.com/ellunium/sketch-measure/archive/master.zip)
+[Download the latest zip file from the fork](https://github.com/ellunium/sketch-measure-latest/archive/master.zip)
 
 #### Check the version of the installed plugin:
 

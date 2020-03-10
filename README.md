@@ -1,4 +1,11 @@
 
+
+# SMframework could not be opened because the developer could not be verified
+**Run this in your terminal:**
+`sudo xattr -r -d com.apple.quarantine /Users/${USER}/Library/Application\ Support/com.bohemiancoding.sketch3/Plugins/Sketch\ Measure.sketchplugin/Contents/Sketch/SMFramework.framework/SMFramework`
+
+_Originally posted by @alexandwich in https://github.com/ellunium/sketch-measure-latest/issues/10#issuecomment-540477016_
+
 # 2.8.0 Fork (2.7.7 SMFramework + 2.7.6 Fixes)
 This is a fork I've created some time ago to fix Measure for Sketch v52+.
 

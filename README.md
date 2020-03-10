@@ -6,6 +6,11 @@
 
 _Originally posted by @alexandwich in https://github.com/ellunium/sketch-measure-latest/issues/10#issuecomment-540477016_
 
+The new version of MacOS is stricter about running software that isn't signed with an Apple developer key. MacOS Catalina is requiring participation in Apple's developer program specifically, and the `SMframework` is currently not built to support that.
+
+`SMframework` is created by @utom and it uses a compiled codebase done in XCode that I don't have access to make changes or make it compatible with Apple's requirement. 
+
+
 # 2.8.0 Fork (2.7.7 SMFramework + 2.7.6 Fixes)
 This is a fork I've created some time ago to fix Measure for Sketch v52+.
 

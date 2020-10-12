@@ -1,3 +1,5 @@
+># Updated to work with Sketch 69
+
 # SMframework could not be opened because the developer could not be verified
 
 **Run this in your terminal:**
@@ -9,7 +11,7 @@ The new version of MacOS is stricter about running software that isn't signed wi
 
 `SMframework` is created by @utom and it uses a compiled codebase done in XCode that I don't have access to make changes or make it compatible with Apple's requirement.
 
-# 2.8.0 Fork (2.7.7 SMFramework + 2.7.6 Fixes)
+# 2.8.1 Fork (2.7.7 SMFramework + 2.8.0 Fixes + 2.7.6 Fixes)
 
 This is a fork I've created some time ago to fix Measure for Sketch v52+.
 
@@ -31,6 +33,7 @@ Inside Sketch, Go to the menu:
 
 ### **FIXED**
 
+- support Sketch v69
 - improved support for inspecting symbols, paths and shapes styles and lybrary styles.
 - fixed issues with nested symbols and assets.
 - fixed a bug where masked symbols could not be inspected
@@ -46,6 +49,7 @@ Inside Sketch, Go to the menu:
 ### **CHANGED**
 
 - changed version to 2.8.1 for all languages
+- changed version to 2.8.0 for all languages
 - changed version to 2.7.9 for all languages
 - changed version to 2.7.8 for all languages
 - updated SMFramework to latest version by @utom
